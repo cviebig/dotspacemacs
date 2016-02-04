@@ -26,6 +26,7 @@ values."
      emacs-lisp
      git
      org
+     ibuffer
      version-control
      )
    ;; List of additional packages that will be installed without being
