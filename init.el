@@ -233,6 +233,14 @@ in `dotspacemacs/user-config'."
   "Configuration function for user code.
 This function is called at the very end of Spacemacs initialization after
 layers configuration. You are free to put any user code."
+
+  (with-eval-after-load 'org (
+                              (load-file "~/.spacemacs.d/org.el")
+                              (load-file "~/.spacemacs.d/latex.el")
+                              (load-file "~/.spacemacs.d/citations.el")
+                              (load-file "~/.spacemacs.d/publishing.el")
+    ))
+
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
