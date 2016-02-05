@@ -234,12 +234,10 @@ in `dotspacemacs/user-config'."
 This function is called at the very end of Spacemacs initialization after
 layers configuration. You are free to put any user code."
 
-  (with-eval-after-load 'org (
                               (load-file "~/.spacemacs.d/org.el")
                               (load-file "~/.spacemacs.d/latex.el")
                               (load-file "~/.spacemacs.d/citations.el")
                               (load-file "~/.spacemacs.d/publishing.el")
-    ))
 
   )
 
