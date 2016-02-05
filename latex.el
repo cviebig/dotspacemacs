@@ -1,3 +1,7 @@
+;;; This should not be necessary?
+; see https://github.com/syl20bnr/spacemacs/blob/master/layers/org/org-async-init.el
+(require 'ox-latex)
+
 ;;;
 ;;; Add scrartcl class to latex export
 ;;;
