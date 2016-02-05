@@ -25,6 +25,7 @@ values."
      ;; ----------------------------------------------------------------
      emacs-lisp
      git
+     latex
      org
      ibuffer
      version-control
