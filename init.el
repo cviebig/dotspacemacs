@@ -236,6 +236,7 @@ in `dotspacemacs/user-config'."
 This function is called at the very end of Spacemacs initialization after
 layers configuration. You are free to put any user code."
 
+                              (load-file "~/.spacemacs.d/cpp.el")
                               (load-file "~/.spacemacs.d/general.el")
                               (load-file "~/.spacemacs.d/org.el")
                               (load-file "~/.spacemacs.d/latex.el")
