@@ -241,7 +241,6 @@ layers configuration. You are free to put any user code."
                               (load-file "~/.spacemacs.d/org.el")
                               (load-file "~/.spacemacs.d/latex.el")
                               (load-file "~/.spacemacs.d/citations.el")
-                              (load-file "~/.spacemacs.d/publishing.el")
 
   )
 
