@@ -37,6 +37,15 @@
              (format "\\citet[%s]{%s}" desc path)))))
 
 (org-add-link-type
+ "citeauthor" nil
+ (lambda (path desc format)
+   "Export [[citeauthor:cohen93]] as \citeauthor{cohen93} in LaTeX."
+   (if (eq format 'latex)
+       (if (or (not desc) (equal 0 (search "citeauthor:" desc)))
+           (format "\\citeauthor{%s}" path)
+         (format "\\citeauthor[%s]{%s}" desc path)))))
+
+(org-add-link-type
  "autoref" nil
  (lambda (path desc format)
        "Export [[autoref:lst:Reduction]] as \autoref{lst:Reduction} in LaTeX."
