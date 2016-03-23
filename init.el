@@ -29,6 +29,7 @@ values."
      ibuffer
      latex
      org
+     pensieve
      version-control
      rtags
      structured-writing
