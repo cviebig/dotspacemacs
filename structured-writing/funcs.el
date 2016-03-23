@@ -68,19 +68,20 @@
         pub-dir))
      (defun ,(intern (format "my-org-publish-%s" name)) ()
        (interactive)
-       (let ((name ,name) (custom-properties ,properties))
-         (let ((general-properties `(,(concat (file-name-base (buffer-file-name (buffer-base-buffer))) "-" name)
-                                     :base-directory ,(file-name-directory (buffer-file-name (buffer-base-buffer)))
-                                     :base-extension "org"
-                                     :publishing-directory ,(file-name-directory (buffer-file-name (buffer-base-buffer)))
-                                     :preparation-function ,(intern (format "my-org-enable-prepare-export-%s" name))
-                                     :completion-function ,(intern (format "my-org-disable-prepare-export-%s" name))
-                                     :publishing-function ,(intern (format "my-org-latex-publish-to-pdf-%s" name))
-                                     :include (,(file-name-nondirectory (buffer-file-name (buffer-base-buffer))))
-                                     :exclude "\\.org$"
-                                     )))
-           (org-publish (append general-properties custom-properties))
-        )))
+       (save-excursion
+        (let ((name ,name) (custom-properties ,properties))
+          (let ((general-properties `(,(concat (file-name-base (buffer-file-name (buffer-base-buffer))) "-" name)
+                                      :base-directory ,(file-name-directory (buffer-file-name (buffer-base-buffer)))
+                                      :base-extension "org"
+                                      :publishing-directory ,(file-name-directory (buffer-file-name (buffer-base-buffer)))
+                                      :preparation-function ,(intern (format "my-org-enable-prepare-export-%s" name))
+                                      :completion-function ,(intern (format "my-org-disable-prepare-export-%s" name))
+                                      :publishing-function ,(intern (format "my-org-latex-publish-to-pdf-%s" name))
+                                      :include (,(file-name-nondirectory (buffer-file-name (buffer-base-buffer))))
+                                      :exclude "\\.org$"
+                                      )))
+            (org-publish (append general-properties custom-properties))
+        ))))
      (spacemacs/set-leader-keys-for-major-mode 'org-mode
         ,(format "r%s" key) ',(intern (format "my-org-publish-%s" name)))
 ))
