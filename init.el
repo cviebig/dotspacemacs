@@ -26,9 +26,9 @@ values."
      auto-completion
      emacs-lisp
      git
+     ibuffer
      latex
      org
-     ibuffer
      version-control
      rtags
      structured-writing
