@@ -1,0 +1,56 @@
+#+TITLE: The document
+#+DATE: January 2016
+
+* Introduction
+** Goals                                                              :Goals:
+These are the goals for this section.
+** Strategy                                                        :Strategy:
+This is the strategy which we will follow in order to achieve our goals.
+** Literature                                                    :Literature:
+This is the literature we will use in this section:
+*** First publication                                             :Reference:
+*** Second publication                                            :Reference:
+*** Third publication                                             :Reference:
+** Notes                                                              :Notes:
+We found out that:
+  - Information 1
+  - Information 2
+  - Information 3
+** Text                                                                :Text:
+This is our text.
+* Main part
+** Goals                                                              :Goals:
+These are the goals for this section.
+** Strategy                                                        :Strategy:
+This is the strategy which we will follow in order to achieve our goals.
+** Literature                                                    :Literature:
+This is the literature we will use in this section:
+*** First publication                                             :Reference:
+*** Second publication                                            :Reference:
+*** Third publication                                             :Reference:
+** Notes                                                              :Notes:
+We found out that:
+  - Information 1
+  - Information 2
+  - Information 3
+** Text                                                                :Text:
+This is our text.
+* Conclusion
+** Goals                                                              :Goals:
+These are the goals for this section.
+** Strategy                                                        :Strategy:
+This is the strategy which we will follow in order to achieve our goals.
+** Literature                                                    :Literature:
+This is the literature we will use in this section:
+*** First publication                                             :Reference:
+*** Second publication                                            :Reference:
+*** Third publication                                             :Reference:
+** Notes                                                              :Notes:
+We found out that:
+  - Information 1
+  - Information 2
+  - Information 3
+** Text                                                                :Text:
+This is our text.
+* References                                                     :References:
+List of references.
