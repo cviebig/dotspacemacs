@@ -226,7 +226,9 @@ values."
    ;; delete only whitespace for changed lines or `nil' to disable cleanup.
    ;; (default nil)
    dotspacemacs-whitespace-cleanup nil
-   ))
+
+   dotspacemacs-frame-title-format "%t (%U@%S)"
+))
 
 (defun dotspacemacs/user-init ()
   "Initialization function for user code.
