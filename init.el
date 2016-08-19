@@ -33,7 +33,6 @@ values."
      pensieve
      version-control
      ;;rtags
-     spotify
      structured-writing
      )
    ;; List of additional packages that will be installed without being
