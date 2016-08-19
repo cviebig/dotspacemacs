@@ -30,6 +30,7 @@ values."
      javascript
      latex
      org
+     spotify
      pensieve
      version-control
      ;;rtags
