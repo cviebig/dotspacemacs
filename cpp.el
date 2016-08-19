@@ -15,3 +15,5 @@
   (c-set-offset 'substatement-open 0)
   )
 (add-hook 'c-mode-hook 'my-c-mode-hook)
+
+(add-to-list 'auto-mode-alist '("\\.cl\\'" . c-mode))
