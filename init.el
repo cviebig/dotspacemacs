@@ -27,11 +27,13 @@ values."
      emacs-lisp
      git
      ibuffer
+     javascript
      latex
      org
      pensieve
      version-control
-     rtags
+     ;;rtags
+     spotify
      structured-writing
      )
    ;; List of additional packages that will be installed without being
