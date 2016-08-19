@@ -42,6 +42,16 @@
     :with-toc nil
 ))
 
+;;; SPC m r
+;;;
+;;; Keys in use:
+;;;
+;;; 1   2  |3|  4   5   6   7   8   9   0
+;;;  |q| |w| |e|  r  |t|  z   u   i   o   p
+;;;   |a| |s| |d| |f| |g|  h   j   k   l
+;;;     y   x   c   v   b   n   n   m
+;;;
+
 (make-my-org-prepare-export-functions "structure"
                                       "3"
                                       '(my-org-prepare-unique-tag "Structure")
