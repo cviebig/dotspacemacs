@@ -52,12 +52,14 @@
        ""
        ,preparation
        )
-     (defun ,(intern (format "my-org-enable-prepare-export-%s" name))  ()
+     (defun ,(intern (format "my-org-enable-prepare-export-%s" name)) ()
        (add-hook 'org-export-before-processing-hook
-                 #',(intern (format "my-org-prepare-export-%s" name))))
+                 #',(intern (format "my-org-prepare-export-%s" name)))
+       )
      (defun ,(intern (format "my-org-disable-prepare-export-%s" name)) ()
        (remove-hook 'org-export-before-processing-hook
-                    #',(intern (format "my-org-prepare-export-%s" name))))
+                    #',(intern (format "my-org-prepare-export-%s" name)))
+       )
      (defun ,(intern (format "my-org-latex-publish-to-pdf-%s" name)) (plist filename pub-dir)
        (org-publish-attachment
         plist
@@ -84,4 +86,5 @@
         ))))
      (spacemacs/set-leader-keys-for-major-mode 'org-mode
         ,(format "r%s" key) ',(intern (format "my-org-publish-%s" name)))
+
 ))
