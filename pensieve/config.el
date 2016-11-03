@@ -12,4 +12,4 @@
 
 ;;; Code:
 
-(setq org-agenda-files (list "~/projects/pensieve"))
+(setq org-agenda-files '("~/projects/pensieve"))
