@@ -27,14 +27,17 @@ values."
      emacs-lisp
      git
      ibuffer
-     javascript
+     ;;javascript
      latex
+     markdown
      org
-     spotify
-     pensieve
-     version-control
+     ;;pensieve
+     python
      ;;rtags
+     ;;spotify
+     sql
      structured-writing
+     version-control
      )
    ;; List of additional packages that will be installed without being
    ;; wrapped in a layer. If you need some configuration for these
