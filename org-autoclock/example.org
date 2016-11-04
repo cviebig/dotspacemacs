@@ -1,0 +1,34 @@
+#+TITLE: Autoclocking example document
+#+STARTUP: showeverything
+#+PROPERTY: autoclock t
+
+* Introduction
+:PROPERTIES:
+:END:
+:LOGBOOK:
+:END:
+
+* Main
+:PROPERTIES:
+:END:
+:LOGBOOK:
+:END:
+
+** First
+:PROPERTIES:
+:END:
+:LOGBOOK:
+:END:
+
+** Second
+:PROPERTIES:
+:END:
+:LOGBOOK:
+:END:
+
+* Conclusion
+:PROPERTIES:
+:END:
+:LOGBOOK:
+:END:
+
