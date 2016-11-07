@@ -46,6 +46,7 @@ values."
      markdown
      org
      org-autoclock
+     org-reftex
      ;;pensieve
      python
      ;;rtags
