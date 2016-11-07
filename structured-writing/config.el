@@ -7,8 +7,9 @@
 ;;; License: GPLv3
 
 (setq my-org-tags '("Structure"
+                    "Purpose"
                     "Survey"
-                    "Goals"
+                    "Objectives"
                     "Ideation"
                     "Strategy"
                     "Literature"
