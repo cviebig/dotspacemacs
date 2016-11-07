@@ -23,6 +23,7 @@
     (interactive)
     (setq my-org-autoclock-initialized t)
     (setq my-org-autoclock-enabled nil)
+    (org-clock-out)
     (print "Disable autoclocking"))
 
   (defun my-org-autoclock-toggle ()
@@ -30,6 +31,7 @@
     (setq my-org-autoclock-initialized t)
     (if my-org-autoclock-enabled
         (progn (setq my-org-autoclock-enabled nil)
+               (org-clock-out)
                (print "Disable autoclocking"))
         (progn (setq my-org-autoclock-enabled t)
                (print "Enable autoclocking"))))
