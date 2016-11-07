@@ -2,7 +2,9 @@
 #+DATE: January 2016
 
 * Introduction
-** Goals                                                              :Goals:
+** Purpose                                                          :Purpose:
+This is the purpose of this section.
+** Objectives                                                    :Objectives:
 These are the goals for this section.
 ** Strategy                                                        :Strategy:
 This is the strategy which we will follow in order to achieve our goals.
@@ -19,7 +21,9 @@ We found out that:
 ** Text                                                                :Text:
 This is our text.
 * Main part
-** Goals                                                              :Goals:
+** Purpose                                                          :Purpose:
+This is the purpose of this section.
+** Objectives                                                    :Objectives:
 These are the goals for this section.
 ** Strategy                                                        :Strategy:
 This is the strategy which we will follow in order to achieve our goals.
@@ -36,7 +40,9 @@ We found out that:
 ** Text                                                                :Text:
 This is our text.
 * Conclusion
-** Goals                                                              :Goals:
+** Purpose                                                          :Purpose:
+This is the purpose of this section.
+** Objectives                                                    :Objectives:
 These are the goals for this section.
 ** Strategy                                                        :Strategy:
 This is the strategy which we will follow in order to achieve our goals.

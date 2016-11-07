@@ -17,9 +17,9 @@
 ;;; Keys in use:
 ;;;
 ;;; 1   2  |3|  4   5   6   7   8   9   0
-;;;  |q| |w| |e|  r  |t|  z   u   i   o   p
-;;;   |a| |s| |d| |f| |g|  h   j   k   l
-;;;     y   x   c   v   b   n   n   m
+;;;  |q|  w   e   r  |t|  z   u  |i| |o| |p|
+;;;   |a| |s| |d|  f   g   h   j   k  |l|
+;;;     y   x   c   v   b  |n|  n   m
 ;;;
 
 (make-my-org-prepare-export-functions "structure"
@@ -27,28 +27,33 @@
                                       '(my-org-prepare-unique-tag "Structure")
                                       my-org-publish-properties-others)
 
+(make-my-org-prepare-export-functions "purpose"
+                                      "p"
+                                      (my-org-prepare-unique-tag "Purpose")
+                                      my-org-publish-properties-text)
+
 (make-my-org-prepare-export-functions "survey"
-                                      "w"
+                                      "s"
                                       (my-org-prepare-multi-tag "Survey")
                                       my-org-publish-properties-others)
 
-(make-my-org-prepare-export-functions "goals"
-                                      "g"
-                                      (my-org-prepare-unique-tag "Goals")
+(make-my-org-prepare-export-functions "objectives"
+                                      "o"
+                                      (my-org-prepare-unique-tag "Objectives")
                                       my-org-publish-properties-text)
 
 (make-my-org-prepare-export-functions "ideation"
-                                      "s"
+                                      "i"
                                       (my-org-prepare-multi-tag "Ideation")
                                       my-org-publish-properties-others)
 
 (make-my-org-prepare-export-functions "strategy"
-                                      "t"
+                                      "d"
                                       (my-org-prepare-unique-tag "Strategy")
-                                      my-org-publish-properties-others)
+                                      my-org-publish-properties-text)
 
 (make-my-org-prepare-export-functions "literature"
-                                      "e"
+                                      "l"
                                       (my-org-prepare-unique-parental-tag "Literature" "Reference")
                                       my-org-publish-properties-others)
 
@@ -63,12 +68,12 @@
                                       my-org-publish-properties-others)
 
 (make-my-org-prepare-export-functions "notes"
-                                      "d"
+                                      "n"
                                       (my-org-prepare-unique-tag "Notes")
-                                      my-org-publish-properties-others)
+                                      my-org-publish-properties-text)
 
 (make-my-org-prepare-export-functions "text"
-                                      "f"
+                                      "t"
                                       (my-org-prepare-unique-tag "Text")
                                       my-org-publish-properties-text)
 
