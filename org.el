@@ -27,6 +27,10 @@
 ;; Include current clocking task in clock reports
 (setq org-clock-report-include-clocking-task t)
 
+; Got hint about this at
+; https://lists.gnu.org/archive/html/emacs-orgmode/2016-01/msg00042.html
+(remove-hook 'org-clock-out-hook 'org-clock-remove-empty-clock-drawer)
+
 (setq org-export-with-drawers 'nil)
 (setq org-export-with-tags 'nil)
 
