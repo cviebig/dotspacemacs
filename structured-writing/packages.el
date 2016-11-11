@@ -12,6 +12,8 @@
   (use-package org
     :config
 
+(spacemacs/set-leader-keys-for-major-mode 'org-mode "in" 'org-add-note)
+
 ;;; SPC m r
 ;;;
 ;;; Keys in use:
