@@ -3,7 +3,7 @@
 
 (defconst org-reftex-packages '(org reftex))
 
-(defun org-autoclock/post-init-org ()
+(defun org-reftex/post-init-org ()
   (use-package org
     :config
 
