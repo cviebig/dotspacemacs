@@ -50,6 +50,7 @@ values."
      ;;pensieve
      python
      ;;rtags
+     shell
      ;;spotify
      sql
      structured-writing
