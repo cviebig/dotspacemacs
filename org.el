@@ -77,3 +77,4 @@
 
 (setq org-ellipsis "…")
 
+(spacemacs/set-leader-keys-for-major-mode 'org-mode "tol" 'org-toggle-link-display)
