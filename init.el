@@ -313,6 +313,7 @@ you should place your code here."
                               (load-file "~/.spacemacs.d/general.el")
                               (load-file "~/.spacemacs.d/org.el")
                               (load-file "~/.spacemacs.d/latex.el")
+                              (setq neo-window-width 37)
 
   )
 
