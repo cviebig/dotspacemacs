@@ -27,52 +27,52 @@
 (make-my-org-prepare-export-functions "structure"
                                       "3"
                                       '(my-org-prepare-unique-tag "Structure")
-                                      my-org-publish-properties-others)
+                                      my-org-publish-properties-structure)
 
 (make-my-org-prepare-export-functions "purpose"
                                       "p"
                                       (my-org-prepare-unique-tag "Purpose")
-                                      my-org-publish-properties-text)
+                                      my-org-publish-properties-purpose)
 
 (make-my-org-prepare-export-functions "survey"
                                       "s"
                                       (my-org-prepare-multi-tag "Survey")
-                                      my-org-publish-properties-others)
+                                      my-org-publish-properties-survey)
 
 (make-my-org-prepare-export-functions "objectives"
                                       "o"
                                       (my-org-prepare-unique-tag "Objectives")
-                                      my-org-publish-properties-text)
+                                      my-org-publish-properties-objectives)
 
 (make-my-org-prepare-export-functions "ideation"
                                       "i"
                                       (my-org-prepare-multi-tag "Ideation")
-                                      my-org-publish-properties-others)
+                                      my-org-publish-properties-ideation)
 
 (make-my-org-prepare-export-functions "strategy"
                                       "d"
                                       (my-org-prepare-unique-tag "Strategy")
-                                      my-org-publish-properties-text)
+                                      my-org-publish-properties-strategy)
 
 (make-my-org-prepare-export-functions "literature"
                                       "l"
                                       (my-org-prepare-unique-parental-tag "Literature" "Reference")
-                                      my-org-publish-properties-others)
+                                      my-org-publish-properties-literature)
 
 (make-my-org-prepare-export-functions "examples"
                                       "q"
                                       (my-org-prepare-unique-tag "Examples")
-                                      my-org-publish-properties-others)
+                                      my-org-publish-properties-examples)
 
 (make-my-org-prepare-export-functions "scratch"
                                       "a"
                                       (my-org-prepare-unique-tag "Scratch")
-                                      my-org-publish-properties-others)
+                                      my-org-publish-properties-scratch)
 
 (make-my-org-prepare-export-functions "notes"
                                       "n"
                                       (my-org-prepare-unique-tag "Notes")
-                                      my-org-publish-properties-text)
+                                      my-org-publish-properties-notes)
 
 (make-my-org-prepare-export-functions "text"
                                       "t"
