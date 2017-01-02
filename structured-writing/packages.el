@@ -24,57 +24,68 @@
 ;;;     y   x   c   v   b  |n|  n   m
 ;;;
 
-(make-my-org-prepare-export-functions "structure"
+(make-my-org-prepare-export-functions "a"
+                                      "structure"
                                       "3"
                                       '(my-org-prepare-unique-tag "Structure")
-                                      my-org-publish-properties-others)
+                                      my-org-publish-properties-structure)
 
-(make-my-org-prepare-export-functions "purpose"
+(make-my-org-prepare-export-functions "b"
+                                      "purpose"
                                       "p"
                                       (my-org-prepare-unique-tag "Purpose")
-                                      my-org-publish-properties-text)
+                                      my-org-publish-properties-purpose)
 
-(make-my-org-prepare-export-functions "survey"
+(make-my-org-prepare-export-functions "c"
+                                      "survey"
                                       "s"
                                       (my-org-prepare-multi-tag "Survey")
-                                      my-org-publish-properties-others)
+                                      my-org-publish-properties-survey)
 
-(make-my-org-prepare-export-functions "objectives"
+(make-my-org-prepare-export-functions "d"
+                                      "objectives"
                                       "o"
                                       (my-org-prepare-unique-tag "Objectives")
-                                      my-org-publish-properties-text)
+                                      my-org-publish-properties-objectives)
 
-(make-my-org-prepare-export-functions "ideation"
+(make-my-org-prepare-export-functions "e"
+                                      "ideation"
                                       "i"
                                       (my-org-prepare-multi-tag "Ideation")
-                                      my-org-publish-properties-others)
+                                      my-org-publish-properties-ideation)
 
-(make-my-org-prepare-export-functions "strategy"
+(make-my-org-prepare-export-functions "f"
+                                      "strategy"
                                       "d"
                                       (my-org-prepare-unique-tag "Strategy")
-                                      my-org-publish-properties-text)
+                                      my-org-publish-properties-strategy)
 
-(make-my-org-prepare-export-functions "literature"
+(make-my-org-prepare-export-functions "g"
+                                      "literature"
                                       "l"
                                       (my-org-prepare-unique-parental-tag "Literature" "Reference")
-                                      my-org-publish-properties-others)
+                                      my-org-publish-properties-literature)
 
-(make-my-org-prepare-export-functions "examples"
+(make-my-org-prepare-export-functions "h"
+                                      "examples"
                                       "q"
                                       (my-org-prepare-unique-tag "Examples")
-                                      my-org-publish-properties-others)
+                                      my-org-publish-properties-examples)
 
-(make-my-org-prepare-export-functions "scratch"
+(make-my-org-prepare-export-functions "i"
+                                      "scratch"
                                       "a"
                                       (my-org-prepare-unique-tag "Scratch")
-                                      my-org-publish-properties-others)
+                                      my-org-publish-properties-scratch)
 
-(make-my-org-prepare-export-functions "notes"
+(make-my-org-prepare-export-functions "j"
+                                      "notes"
                                       "n"
                                       (my-org-prepare-unique-tag "Notes")
-                                      my-org-publish-properties-text)
+                                      my-org-publish-properties-notes)
 
-(make-my-org-prepare-export-functions "text"
+(make-my-org-prepare-export-functions "k"
+                                      "text"
                                       "t"
                                       (my-org-prepare-unique-tag "Text")
                                       my-org-publish-properties-text)

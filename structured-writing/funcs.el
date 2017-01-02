@@ -46,7 +46,7 @@
   (org-map-entries (lambda () (org-promote)) children)
 )
 
-(defmacro make-my-org-prepare-export-functions (name key preparation properties)
+(defmacro make-my-org-prepare-export-functions (no name keybinding preparation properties)
   `(progn
      (defun ,(intern (format "my-org-prepare-export-%s" name)) (backend)
        ,preparation
@@ -64,7 +64,7 @@
         plist
         (org-latex-compile
          (org-publish-org-to 'latex
-                             filename ,(format ".%s.tex" name)
+                             filename ,(format ".%s.%s.tex" no name)
                              plist (file-name-directory filename)))
         pub-dir))
      (defun ,(intern (format "my-org-publish-%s" name)) ()
@@ -84,6 +84,6 @@
             (org-publish (append general-properties custom-properties))
         ))))
      (spacemacs/set-leader-keys-for-major-mode 'org-mode
-        ,(format "r%s" key) ',(intern (format "my-org-publish-%s" name)))
+        ,(format "r%s" keybinding) ',(intern (format "my-org-publish-%s" name)))
 
 ))
