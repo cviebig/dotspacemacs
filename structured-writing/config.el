@@ -50,7 +50,7 @@
               my-org-publish-properties-base))
 (setq my-org-publish-properties-strategy
       (append '(:subtitle "Strategy")
-              my-org-publish-properties-base))
+              my-org-publish-properties-twocolumn))
 (setq my-org-publish-properties-literature
       (append '(:subtitle "Literature")
               my-org-publish-properties-base))
