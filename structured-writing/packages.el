@@ -19,7 +19,7 @@
 ;;; Keys in use:
 ;;;
 ;;; 1   2  |3|  4   5   6   7   8   9   0
-;;;  |q|  w   e   r  |t|  z   u  |i| |o| |p|
+;;;   q   w  |e|  r  |t|  z   u  |i| |o| |p|
 ;;;   |a| |s| |d|  f   g   h   j   k  |l|
 ;;;     y   x   c   v   b  |n|  n   m
 ;;;
@@ -68,7 +68,7 @@
 
 (make-my-org-prepare-export-functions "h"
                                       "examples"
-                                      "q"
+                                      "e"
                                       (my-org-prepare-unique-tag "Examples")
                                       my-org-publish-properties-examples)
 
