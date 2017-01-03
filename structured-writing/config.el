@@ -50,7 +50,7 @@
               my-org-publish-properties-base))
 (setq my-org-publish-properties-strategy
       (append '(:subtitle "Strategy")
-              my-org-publish-properties-base))
+              my-org-publish-properties-twocolumn))
 (setq my-org-publish-properties-literature
       (append '(:subtitle "Literature")
               my-org-publish-properties-base))
@@ -64,5 +64,5 @@
       (append '(:subtitle "Notes")
               my-org-publish-properties-base))
 (setq my-org-publish-properties-text
-      (append '(:with-drawers ("EXPOSEABSTRACT"))
+      (append '(:with-drawers ("ABSTRACT", "EXPOSEABSTRACT"))
               my-org-publish-properties-twocolumn))
