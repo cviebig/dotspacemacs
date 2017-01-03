@@ -8,8 +8,8 @@
 
 (setq my-org-tags '("Structure"
                     "Purpose"
-                    "Survey"
                     "Objectives"
+                    "Survey"
                     "Ideation"
                     "Strategy"
                     "Literature"
@@ -39,12 +39,12 @@
 (setq my-org-publish-properties-purpose
       (append '(:subtitle "Purpose")
               my-org-publish-properties-twocolumn))
-(setq my-org-publish-properties-survey
-      (append '(:subtitle "Surveys")
-              my-org-publish-properties-base))
 (setq my-org-publish-properties-objectives
       (append '(:subtitle "Objectives")
               my-org-publish-properties-twocolumn))
+(setq my-org-publish-properties-survey
+       (append '(:subtitle "Surveys")
+               my-org-publish-properties-base))
 (setq my-org-publish-properties-ideation
       (append '(:subtitle "Ideation")
               my-org-publish-properties-base))
