@@ -12,6 +12,7 @@
 \\usepackage[utf8]{inputenc}
 \\usepackage{lmodern}
 \\usepackage{url}
+\\usepackage{graphicx}
 \\usepackage[numbers]{natbib}
 \\usepackage[hidelinks,backref]{hyperref}
 \\usepackage{amsmath}
@@ -34,6 +35,7 @@
 \\usepackage[utf8]{inputenc}
 \\usepackage{lmodern}
 \\usepackage{url}
+\\usepackage{graphicx}
 \\usepackage{natbib}
 \\usepackage{hyperref}
 \\usepackage{amsmath}
