@@ -4,7 +4,7 @@
 ;;; http://stackoverflow.com/questions/698562
 (setq org-export-with-sub-superscripts nil)
 
-(setq org-drawers (quote ("PROPERTIES" "LOGBOOK" "NOTES" "CLOCKTABLE" "EXPOSEABSTRACT" "DOCUMENTSCOPE")))
+(setq org-drawers (quote ("PROPERTIES" "LOGBOOK" "NOTES" "CLOCKTABLE" "ABSTRACT" "EXPOSEABSTRACT" "DOCUMENTSCOPE")))
 
 ;;
 ;; Resume clocking task when emacs is restarted
