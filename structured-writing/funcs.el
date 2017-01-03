@@ -46,7 +46,8 @@
   (org-map-entries (lambda () (org-promote)) children)
 )
 
-(defmacro make-my-org-prepare-export-functions (no name keybinding preparation properties)
+;; when maketitle is t the document is required to place the `'\maketitle`
+(defmacro make-my-org-prepare-export-functions (no name keybinding preparation properties &optional maketitle)
   `(progn
      (defun ,(intern (format "my-org-prepare-export-%s" name)) (backend)
        ,preparation
@@ -54,10 +55,12 @@
      (defun ,(intern (format "my-org-enable-prepare-export-%s" name)) (argument)
        (add-hook 'org-export-before-parsing-hook
                  #',(intern (format "my-org-prepare-export-%s" name)))
+       (when ,maketitle (setq org-latex-title-command ""))
        )
      (defun ,(intern (format "my-org-disable-prepare-export-%s" name)) (argument)
        (remove-hook 'org-export-before-parsing-hook
                     #',(intern (format "my-org-prepare-export-%s" name)))
+       (when ,maketitle (setq org-latex-title-command "\\maketitle"))
        )
      (defun ,(intern (format "my-org-latex-publish-to-pdf-%s" name)) (plist filename pub-dir)
        (org-publish-attachment

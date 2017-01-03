@@ -88,6 +88,7 @@
                                       "text"
                                       "t"
                                       (my-org-prepare-unique-tag "Text")
-                                      my-org-publish-properties-text)
+                                      my-org-publish-properties-text
+                                      t)
 
 ))

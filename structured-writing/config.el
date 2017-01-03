@@ -64,5 +64,5 @@
       (append '(:subtitle "Notes")
               my-org-publish-properties-base))
 (setq my-org-publish-properties-text
-      (append '(:with-drawers ("EXPOSEABSTRACT"))
+      (append '(:with-drawers ("ABSTRACT", "EXPOSEABSTRACT"))
               my-org-publish-properties-twocolumn))
