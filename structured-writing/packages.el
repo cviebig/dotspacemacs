@@ -37,16 +37,16 @@
                                       my-org-publish-properties-purpose)
 
 (make-my-org-prepare-export-functions "c"
-                                      "survey"
-                                      "s"
-                                      (my-org-prepare-multi-tag "Survey")
-                                      my-org-publish-properties-survey)
-
-(make-my-org-prepare-export-functions "d"
                                       "objectives"
                                       "o"
                                       (my-org-prepare-unique-tag "Objectives")
                                       my-org-publish-properties-objectives)
+
+(make-my-org-prepare-export-functions "d"
+                                      "survey"
+                                      "s"
+                                      (my-org-prepare-multi-tag "Survey")
+                                      my-org-publish-properties-survey)
 
 (make-my-org-prepare-export-functions "e"
                                       "ideation"
