@@ -38,7 +38,7 @@
 
   (defun my-org-autoclock-section ()
     ""
-    (when (eq major-mode 'org-mode)
+    (when (and (eq major-mode 'org-mode) (evil-insert-state-p))
       (unless my-org-autoclock-initialized
         (when (org-entry-get nil "autoclock" t)
           (setq my-org-autoclock-enabled t))
