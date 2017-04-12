@@ -316,6 +316,7 @@ you should place your code here."
                               (setq neo-window-width 37)
                               (spacemacs/set-leader-keys "pi" 'neotree-find)
                               (spacemacs/set-leader-keys "o" 'ace-window)
+                              (spacemacs/set-leader-keys "pj" 'neotree-enter-ace-window)
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
