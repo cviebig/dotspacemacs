@@ -315,7 +315,7 @@ you should place your code here."
                               (load-file "~/.spacemacs.d/latex.el")
                               (setq neo-window-width 37)
                               (spacemacs/set-leader-keys "pi" 'neotree-find)
-
+                              (spacemacs/set-leader-keys "o" 'ace-window)
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
