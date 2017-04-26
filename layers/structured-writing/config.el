@@ -6,7 +6,8 @@
 ;;
 ;;; License: GPLv3
 
-(setq my-org-tags '("Structure"
+(setq my-org-tags '("Outline"
+                    "Structure"
                     "Purpose"
                     "Objectives"
                     "Survey"

@@ -17,7 +17,14 @@
 (defun my-org-remove-section (tags)
   ""
   (org-map-entries (lambda () (let ((beg (point)))
-                                (outline-next-visible-heading 1)
+                                (org-forward-heading-same-level 1)
+                                (when (eq beg (point))
+                                  (message "%s" (org-outline-level))
+                                  (if (> (org-outline-level) 1)
+                                    (progn
+                                      (outline-up-heading 1)
+                                      (org-forward-heading-same-level 1))
+                                    (goto-char (point-max)))
                                 (backward-char)
                                 (delete-region beg (point))))
                    (mapconcat 'identity tags "|")
