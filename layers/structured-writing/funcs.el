@@ -75,7 +75,6 @@
                    "Outline"
                    'nil)
   ; Remove all sections tagged :Outline:
-                                        ;(my-org-remove-section '("Structure" "Outline"))
   (let ((tags-to-remove my-org-tags))
     (delete "Purpose" tags-to-remove)
     (delete "Objectives" tags-to-remove)
