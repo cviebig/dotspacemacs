@@ -55,18 +55,17 @@
 
 (defun my-org-prepare-current-outline-subtree ()
   ""
-  ; Remove heading
-  ;(delete-region (point-at-bol) (point-at-eol))
-  (org-set-tags "no_title")
   ; Promote children to top level
-  (org-map-entries (lambda () (org-promote))
-                   (mapconcat 'identity (remove "Outline" my-org-tags) "|")
+  (org-map-entries (lambda ()
+                     (while (> (org-outline-level) 1)
+                       (org-promote-subtree)))
+                   (mapconcat 'identity (remove "Reference" (remove "Outline" my-org-tags)) "|")
                    'tree)
   )
 
 (defun my-org-prepare-outline-subtree (heading-id)
   (show-all)
-  ; Add :Outline: section with ID heading-id to export set
+  ; Promote children of the heading to top level
   (org-map-entries (lambda ()
                      (let ((‘org-trust-scanner-tags’ t))
                        (let ((properties (org-entry-properties)))
