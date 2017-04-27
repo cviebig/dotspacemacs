@@ -228,7 +228,8 @@ indicates whether there are sub-sections tagged with :Outline:."
   (unless heading-path
     (setq heading-path '()))
   (save-excursion
-    (let ((inc-variable 0))
+    (let ((inc-variable 0)
+          (sections-seen 0))
       (org-map-entries
        '(lambda ()
           (when (equal heading-path (org-get-outline-path))
@@ -258,6 +259,7 @@ indicates whether there are sub-sections tagged with :Outline:."
                                                                       heading-path
                                                                       has-children
                                                                       )
+                        (setq sections-seen (+ sections-seen 1 children))
                         )
                       )
                     )
@@ -269,6 +271,7 @@ indicates whether there are sub-sections tagged with :Outline:."
           "Outline"
           'nil
           )
+      (message "Setup publishing functions for %s outline sections" sections-seen)
       inc-variable
       )
     )
