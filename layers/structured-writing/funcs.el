@@ -19,7 +19,6 @@
   (org-map-entries (lambda () (let ((beg (point)))
                                 (org-forward-heading-same-level 1)
                                 (when (eq beg (point))
-                                  (message "%s" (org-outline-level))
                                   (if (> (org-outline-level) 1)
                                     (progn
                                       (outline-up-heading 1)
@@ -282,7 +281,6 @@ indicates whether there are sub-sections tagged with :Outline:."
                      (let ((‘org-trust-scanner-tags’ t))
                        (let ((properties (org-entry-properties)))
                          (let ((heading-id (cdr (assoc "ID" properties))))
-                           (message "%s" heading-id)
                            (when heading-id
                              (funcall (intern (format "my-org-publish-%s" heading-id))))))))
                    "Outline"
