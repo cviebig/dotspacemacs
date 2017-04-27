@@ -151,12 +151,12 @@ that heading. xheading-path is expected to contain the headings
 on the path to that heading including itself. xhas-children
 indicates whether there are sub-sections tagged with :Outline:."
   `(progn
-     ,(message "%s\t%s\t%s\t%s"
-               (eval xoutline-path)
-               (eval xheading-id)
-               (eval xheading-name)
-               (eval xhas-children)
-               )
+     ;,(message "%s\t%s\t%s\t%s"
+     ;          (eval xoutline-path)
+     ;          (eval xheading-id)
+     ;          (eval xheading-name)
+     ;          (eval xhas-children)
+     ;          )
      (defun ,(intern (format "my-org-prepare-export-%s" (eval xheading-id))) (backend)
        (my-org-prepare-outline-subtree ,(eval xheading-id))
        )
