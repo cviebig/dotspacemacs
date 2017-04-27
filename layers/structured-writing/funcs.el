@@ -74,8 +74,8 @@
                            (my-org-prepare-current-outline-subtree)))))
                    "Outline"
                    'nil)
-  ; Remove all sections tagged :Outline:
-  (let ((tags-to-remove my-org-tags))
+  ; Remove all sections despite those we do want to export
+  (let ((tags-to-remove (copy-sequence my-org-tags)))
     (delete "Purpose" tags-to-remove)
     (delete "Objectives" tags-to-remove)
     (delete "Strategy" tags-to-remove)
