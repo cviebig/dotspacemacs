@@ -280,12 +280,16 @@ indicates whether there are sub-sections tagged with :Outline:."
 (defun my-org-publish-outline ()
   (interactive)
   (my-org-setup-outline-publish)
-  (org-map-entries (lambda ()
-                     (let ((‘org-trust-scanner-tags’ t))
-                       (let ((properties (org-entry-properties)))
-                         (let ((heading-id (cdr (assoc "ID" properties))))
-                           (when heading-id
-                             (funcall (intern (format "my-org-publish-%s" heading-id))))))))
-                   "Outline"
-                   'nil)
+  (let ((sections-seen 0))
+    (org-map-entries (lambda ()
+                       (let ((‘org-trust-scanner-tags’ t))
+                         (let ((properties (org-entry-properties)))
+                           (let ((heading-id (cdr (assoc "ID" properties))))
+                             (when heading-id
+                               (funcall (intern (format "my-org-publish-%s" heading-id)))
+                               (setq sections-seen (+ sections-seen 1)))))))
+                     "Outline"
+                     'nil)
+    (message "Published documents for %s outline sections" sections-seen)
+    )
   )
