@@ -194,16 +194,28 @@ indicates whether there are sub-sections tagged with :Outline:."
                                       :subtitle ,(mapconcat 'identity (eval xheading-path) " -- ")
                                       )))
             (org-publish (append general-properties my-org-publish-properties-base))
-        )))
+            )
+          )
+       )
+     (defun ,(intern (format "my-org-publish-%s-%s"
+                             (mapconcat 'my-org-convert-number (eval xoutline-path) "")
+                             (eval xheading-name))) ()
+       (interactive)
+       ,(intern (format "my-org-publish-%s" (eval xheading-id)))
+       )
      (let ((kbd ,(mapconcat 'my-org-convert-number (eval xoutline-path) "")))
        (if ,(eval xhas-children)
          ; TODO: Try to find out how `spacemacs/declare-prefix-for-mode' works and add a prefix
          (spacemacs/set-leader-keys-for-major-mode
            'org-mode (concat "u" kbd "0")
-           ',(intern (format "my-org-publish-%s" (eval xheading-id))))
+           ',(intern (format "my-org-publish-%s-%s"
+                             (mapconcat 'my-org-convert-number (eval xoutline-path) "")
+                             (eval xheading-name))))
          (spacemacs/set-leader-keys-for-major-mode
            'org-mode (concat "u" kbd)
-           ',(intern (format "my-org-publish-%s" (eval xheading-id))))
+           ',(intern (format "my-org-publish-%s-%s"
+                             (mapconcat 'my-org-convert-number (eval xoutline-path) "")
+                             (eval xheading-name))))
          )
        )
      )
