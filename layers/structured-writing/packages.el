@@ -92,5 +92,6 @@
                                       t)
 
 (spacemacs/set-leader-keys-for-major-mode 'org-mode "ru" 'my-org-setup-outline-publish)
+(spacemacs/set-leader-keys-for-major-mode 'org-mode "uu" 'my-org-publish-outline)
 
 ))
