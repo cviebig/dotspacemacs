@@ -200,7 +200,7 @@ indicates whether there are sub-sections tagged with :Outline:."
                                                 (mapconcat 'my-org-convert-number (eval xoutline-path) "")
                                                 (eval xheading-name)))) ()
        (interactive)
-       ,(intern (format "my-org-publish-%s" (eval xheading-id)))
+       (call-interactively (intern ,(format "my-org-publish-%s" (eval xheading-id))))
        )
      (let ((kbd ,(mapconcat 'my-org-convert-number (eval xoutline-path) "")))
        (if ,(eval xhas-children)
