@@ -44,7 +44,7 @@
 
 (make-my-org-prepare-export-functions "d"
                                       "survey"
-                                      "s"
+                                      "d"
                                       (my-org-prepare-multi-tag "Survey")
                                       my-org-publish-properties-survey)
 
@@ -56,7 +56,7 @@
 
 (make-my-org-prepare-export-functions "f"
                                       "strategy"
-                                      "d"
+                                      "s"
                                       (my-org-prepare-unique-tag "Strategy")
                                       my-org-publish-properties-strategy)
 
