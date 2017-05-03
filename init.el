@@ -47,6 +47,7 @@ values."
      org
      org-autoclock
      org-reftex
+     pdf-tools
      ;;pensieve
      python
      ;;rtags
