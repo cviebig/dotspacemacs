@@ -34,21 +34,21 @@
 (defun my-org-prepare-multi-tag (tag)
   ""
   (show-all)
-  (my-org-remove-section (remove tag my-org-tags))
+  (my-org-remove-section (remove tag (remove "Outline" my-org-tags)))
   (my-org-remove-heading '("References" "Appendix"))
 )
 
 (defun my-org-prepare-unique-tag (tag)
   ""
   (show-all)
-  (my-org-remove-section (remove tag my-org-tags))
+  (my-org-remove-section (remove tag (remove "Outline" my-org-tags)))
   (my-org-remove-heading (cons tag '("References" "Appendix")))
 )
 
 (defun my-org-prepare-unique-parental-tag (tag children)
   ""
   (show-all)
-  (my-org-remove-section (remove tag my-org-tags))
+  (my-org-remove-section (remove tag (remove "Outline" my-org-tags)))
   (my-org-remove-heading (cons tag '("References" "Appendix")))
   (org-map-entries (lambda () (org-promote)) children)
 )
